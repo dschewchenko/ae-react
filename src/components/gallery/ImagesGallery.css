@@ -1,0 +1,24 @@
+.ImagesGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 5px;
+    padding: 5px;
+}
+
+.ImagesGallery--image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.ImagesGallery-image-wrap {
+    display: block;
+    cursor: pointer;
+
+    text-decoration: none;
+    transition: filter 300ms ease;
+}
+
+.ImagesGallery-image-wrap:hover {
+    filter: opacity(80%) grayscale(90%);
+}
